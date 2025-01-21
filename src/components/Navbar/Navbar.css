@@ -1,0 +1,12 @@
+
+.navbar a {
+  color: #000 !important; /* Color normal del enlace */
+  text-decoration: none; /* Sin subrayado */
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  color: #923B3B !important; /* Color al pasar el mouse */
+}
