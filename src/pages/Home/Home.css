@@ -1,0 +1,52 @@
+.homeMission {
+    padding: 1rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.homeTitle {
+    font-size: 2.5rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-align: left;
+    color: #923B3B
+}
+
+.homeText {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.catalogoSection{
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: right;
+    height: 450px;
+}
+
+.titleSection {
+    font-size: 2.5rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-align: right;
+    color: #923B3B;
+    padding-right: 1rem;
+}
+
+.cardSection {
+    height: 400px;
+    width: 100%;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #547FC4;
+
+}
