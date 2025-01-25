@@ -1,7 +1,7 @@
 /* Fondo del slide */
 .custom-slide {
-    background-color: #DDC75B; /* Cambia este color según tus preferencias */
-    height: 400px; /* Ajusta la altura según tus necesidades */
+    background-color: #DDC75B; 
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,23 +12,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding:3rem;
-    margin-top: 3rem;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: auto;
+    /* margin-top: 3rem; */
   }
   
   /* Contenedor del texto */
   .text-container {
     flex: 1;
-    padding: 1rem;
     color: #333; /* Color del texto */
-
+padding-left: 2rem;
+text-align: right;
 }
 
 .lable {
     font-size: 2.5rem;
     font-family: "Lora", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
 }
 
@@ -40,17 +41,54 @@
   
   /* Contenedor de la imagen */
   .image-container {
-    flex: 1;
+    width: 350px; /* Ancho máximo del contenedor */
+    height: 350px; /* Altura máxima del contenedor */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Oculta el exceso si la imagen es más grande */
+
   }
   
-  /* Estilo de la imagen */
   .slide-image {
-    max-width: 350px; /* Ajusta el tamaño de la imagen */
-    max-height: 350px; /* Mantén la proporción */
-    object-fit: cover; /* Recorta la imagen si es necesario */
+    max-width: 100%; /* Se adapta al ancho del contenedor */
+    max-height: 100%; /* Se adapta a la altura del contenedor */
+    object-fit: contain; /* Mantiene las proporciones de la imagen */
+  }
 
-
+  @media (max-width: 1200px) {
+    .lable {
+      font-size: 2rem; /* Reduce el tamaño en pantallas medianas */
+    }
+  
+    .description {
+      font-size: 0.9rem; /* Reduce ligeramente el tamaño */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .lable {
+      font-size: 1.5rem; /* Texto principal más pequeño en pantallas pequeñas */
+    }
+  
+    .description {
+      font-size: 0.8rem; /* Texto secundario más pequeño */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lable {
+      font-size: 1.2rem; /* Ajuste para pantallas muy pequeñas */
+      text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+  
+    .description {
+      font-size: 0.7rem; /* Ajuste para pantallas muy pequeñas */
+      text-align: center; /* Centra el texto */
+    }
+  
+    .text-container {
+      padding-right: 0; /* Elimina padding para texto centrado */
+      padding-left: 0;
+    }
   }

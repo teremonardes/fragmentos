@@ -1,52 +1,122 @@
+/* Home Mission Section */
 .homeMission {
-    padding: 1rem;
+    padding: 4rem;
     display: flex;
-    align-items: left;
-    justify-content: center;
     flex-direction: column;
-    height: 400px;
-}
-
-.homeTitle {
+    align-items: flex-start; /* Asegura que el texto esté alineado a la izquierda */
+    justify-content: center;
+    height: auto;
+  }
+  
+  .homeTitle {
     font-size: 2.5rem;
     font-family: "Lora", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     text-align: left;
-    color: #923B3B
-}
-
-.homeText {
+    color: #923B3B;
+    padding-top: 4rem;
+  }
+  
+  .homeText {
     font-family: "Be Vietnam Pro", serif;
     font-weight: 400;
     font-size: 1.5rem;
-}
-
-.catalogoSection{
-    padding: 0rem;
+    line-height: 1.6; /* Mejora la legibilidad */
+  }
+  
+  /* Sección MATERIALIDAD */
+.catalogoSection {
+  padding-top: 4rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: right;
-    height: 450px;
-}
-
-.titleSection {
+    align-items: flex-end; /* Alinea el título MATERIALIDAD a la derecha */
+    justify-content: center;
+    width: 100%; /* Asegura que ocupe toda la pantalla */
+  }
+  
+  .titleSection {
     font-size: 2.5rem;
     font-family: "Lora", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
-    text-align: right;
+    text-align: right; /* Texto alineado a la derecha */
     color: #923B3B;
-    padding-right: 1rem;
-}
-
-.cardSection {
-    height: 400px;
-    width: 100%;
+    margin-bottom: 1rem; /* Espaciado inferior */
+    width: 100%; 
+    padding-right: 2rem;
+  }
+  
+  /* Contenedor de las tarjetas */
+  .cardSection {
     display: flex;
-   justify-content: space-around;
-   align-items: center;
-   background-color: #547FC4;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente en varias filas */
+    justify-content: space-around; /* Espaciado uniforme entre tarjetas */
+    align-items: center; /* Centra verticalmente en el contenedor */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: #547FC4;
+    padding: 1rem;
 
-}
+  }
+  
+  /* Tarjetas */
+  .vidriosCard,
+  .metalesCard,
+  .lozasCard {
+    flex: 0 0 300px; /* Mantiene un tamaño fijo para las tarjetas */
+    max-width: 300px;
+    margin: 1rem; /* Espaciado entre tarjetas */
+  }
+  
+  .card {
+    width: 100%; /* Las tarjetas ocuparán todo el espacio dentro de su contenedor */
+    text-align: center;
+    border: none;
+    background-color: #292727 !important;
+    border-radius: 0px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  .card-img-container {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    overflow: hidden; /* Oculta el contenido que exceda el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    overflow: hidden;
+  }
+
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta las imágenes */
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-family: "Be Vietnam Pro", serif;
+    font-size: 1.5rem !important;
+    color: #f5f1f1 !important;
+    margin-top: 1rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .titleSection {
+      font-size: 2rem;
+      text-align: center; /* Centra el título en pantallas más pequeñas */
+    }
+  
+    .vidriosCard,
+    .metalesCard,
+    .lozasCard {
+      flex: 0 0 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+      max-width: 100%;
+    }
+  
+    .cardSection {
+      justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+    }
+  }
+  
