@@ -21,7 +21,7 @@
     font-family: "Be Vietnam Pro", serif;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 1.6; /* Mejora la legibilidad */
+    line-height: 1.6; 
   }
   
   /* Sección MATERIALIDAD */
@@ -64,7 +64,8 @@
     flex: 0 0 300px; /* Mantiene un tamaño fijo para las tarjetas */
     max-width: 300px;
     margin: 1rem; /* Espaciado entre tarjetas */
-  }
+    cursor: pointer;
+     }
   
   .card {
     width: 100%; /* Las tarjetas ocuparán todo el espacio dentro de su contenedor */
@@ -73,7 +74,13 @@
     background-color: #292727 !important;
     border-radius: 0px !important;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* Sombra ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   .card-img-container {
     width: 100%;
