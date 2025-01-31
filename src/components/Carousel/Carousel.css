@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+  }
+  .custom-slide:hover {
+    transform: scale(1.02); /* Efecto de escala al pasar el mouse (opcional) */
+    transition: transform 0.3s ease;
   }
   
   /* Contenedor principal del contenido del slide */

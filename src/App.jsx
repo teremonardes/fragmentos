@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import NotFound from './pages/NotFound/NotFound'
 import Catalogo from './pages/Catalogo/Catalogo'
+import Contacto from './pages/Contacto/Contacto'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -17,6 +18,7 @@ function App () {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/catalogo/:material' element={<Catalogo />} />
+        <Route path='/contacto' element={<Contacto />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

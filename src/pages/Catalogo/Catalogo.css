@@ -41,6 +41,7 @@
     align-items: center; /* Centra la imagen verticalmente */
    
     overflow: hidden; /* Oculta contenido que exceda el contenedor */
+    margin-bottom: 2rem;
   }
   
   .catalogo-img {
@@ -49,3 +50,15 @@
     object-fit: contain; /* Mantiene las proporciones de la imagen */
   }
   
+  .title-item {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #923B3B;
+    padding: 2rem;
+  }
+
+  .paragraph-item {
+    font-family: "Be Vietnam Pro", serif;
+    font-size: 1.2rem;
+  }

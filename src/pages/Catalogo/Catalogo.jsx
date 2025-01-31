@@ -22,10 +22,14 @@ const Catalogo = () => {
             <div className='catalogo-img-container'>
               <img src={item.src} alt={item.name} className='catalogo-img' />
             </div>
-            <h3>{item.name}</h3>
-            <p>{item.desc}</p>
-            <p><strong>Contexto:</strong> {item.cntx}</p>
-            <p><strong>Análisis:</strong> {item.anls}</p>
+            <h3 className='title-item'>{item.name.toUpperCase()}</h3>
+            <p className='paragraph-item'>{item.desc}</p>
+            <h3 className='title-item'>ANTECEDENTES:</h3>
+            <p className='paragraph-item'>{item.antec}</p>
+            <h3 className='title-item'>METODOLOGÍAS:</h3>
+            <p className='paragraph-item'>{item.meto}</p>
+            <h3 className='title-item'>ANÁLISIS DE LA MUESTRA:</h3>
+            <p className='paragraph-item'>{item.anls}</p>
           </div>
         ))}
       </div>
