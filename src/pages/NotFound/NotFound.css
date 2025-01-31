@@ -1,25 +1,69 @@
+/* Título principal */
 .title-NF {
     font-family: "Lora", serif;
     font-size: 7rem;
     text-align: center;
     padding-top: 4rem;
-}
-
-.text-NF {
+  }
+  
+  /* Texto secundario */
+  .text-NF {
     text-align: center;
     font-family: "Be Vietnam Pro", serif;
     font-size: 2.5rem;
-    
   }
-
-.NotFound {
+  
+  /* Contenedor principal de la página Not Found */
+  .NotFound {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: auto;
-}
-
-.volver {
+  }
+  
+  /* Botón de volver */
+  .volver {
     margin-bottom: 3rem;
-}
+  }
+  
+  /* Responsividad */
+  
+  @media (max-width: 1200px) {
+    .title-NF {
+      font-size: 5rem; /* Reduce el tamaño en pantallas más pequeñas */
+    }
+  
+    .text-NF {
+      font-size: 2rem; /* Reduce el tamaño del texto secundario */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title-NF {
+      font-size: 4rem; /* Ajusta el tamaño del título para pantallas medianas */
+    }
+  
+    .text-NF {
+      font-size: 1.8rem; /* Ajusta el tamaño del texto secundario */
+    }
+  
+    .volver {
+      margin-bottom: 2rem; /* Reduce el espacio inferior */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title-NF {
+      font-size: 3rem; /* Ajuste más pequeño en pantallas pequeñas */
+    }
+  
+    .text-NF {
+      font-size: 1.5rem; /* Ajuste del texto secundario en pantallas pequeñas */
+    }
+  
+    .volver {
+      margin-bottom: 1rem; /* Reduce el espacio inferior aún más */
+    }
+  }
+  

@@ -4,19 +4,22 @@
     align-items: center;
     text-align: center;
     padding: 2rem;
+    width: 100%;
 }
 
 .titulo-contacto {
     font-size: 2.5rem;
     font-family: "Lora", serif;
     font-weight: 600;
-    padding: 2rem;
+    padding: 2rem; /* Reducido para evitar demasiado espacio */
 }
 
 .texto-contacto {
     font-family: "Be Vietnam Pro", serif;
     font-weight: 400;
     font-size: 1rem;
+    max-width: 600px; /* Limita la anchura del texto para mejor lectura */
+    padding: 0 1rem; /* Ajuste para evitar tocar bordes en móviles */
 }
 
 .formulario {
@@ -25,18 +28,21 @@
     width: 100%;
     max-width: 400px; /* Evita que el formulario se expanda demasiado */
 }
-
-input, textarea {
+.formulario input, 
+.formulario textarea {
     width: 100%;
     padding: 0.8rem;
-    margin: 0.5rem 0;
+    margin-bottom: 1.5rem; /* Espaciado mayor */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    font-family: "Be Vietnam Pro", serif;
 }
 
+
+
 textarea {
-    height: 150px; /* Un poco más grande */
+    height: 150px;
     resize: none;
 }
 
@@ -49,8 +55,43 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    font-family: "Be Vietnam Pro", serif;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .contacto {
+        padding: 1rem;
+    }
+
+    .titulo-contacto {
+        font-size: 2rem;
+        padding: 1rem; /* Reduce el espacio extra en móviles */
+    }
+
+    .texto-contacto {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .formulario {
+        max-width: 100%;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
 }
