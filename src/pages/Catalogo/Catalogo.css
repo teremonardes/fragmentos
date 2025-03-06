@@ -5,6 +5,7 @@
   font-family: "Be Vietnam Pro", serif;
   font-weight: 400;
   line-height: 1.6; 
+  font-size: 2.5rem;
 }
 
 /* Contenedor de título */
@@ -12,49 +13,44 @@
   background-color: #923B3B;
   width: 100%;
   height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Contenedor general del catálogo */
 .catalogo-container {
   text-align: center;
-}
-
-/* Grilla del catálogo */
-.catalogo-grid {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
-  grid-template-columns: 1fr; /* Usar una sola columna */
+  
 }
 
 
-/* Grilla del catálogo - Cambiar la disposición a una columna */
-.catalogo-grid {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
-  grid-template-columns: 1fr; /* Usar una sola columna */
-}
 
 
 /* Estilos de cada ítem en el catálogo */
 .catalogo-item {
-    overflow: hidden;
-    padding: 3rem;
-    text-align: center;
+  display: flex;
+  flex-direction: row; /* Imagen y texto lado a lado */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 2rem;
+  padding: 3rem;
+  text-align: left;
 }
 
 /* Contenedor de la imagen */
 .catalogo-img-container {
-  width: 100%;
+  width: 50%;
   height: 400px; /* Altura fija para todas las imágenes */
+  background-color: #fff; /* Asegura un fondo uniforme */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 2rem;
 }
-
+.catalogo-text-container {
+  padding: 2rem;
+  width: 50%;
+}
 /* Estilo para las imágenes */
 .catalogo-img {
   max-width: 100%;
@@ -68,67 +64,68 @@
   font-size: 2rem;
   font-weight: 600;
   color: #923B3B;
-  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Descripción de cada ítem */
 .paragraph-item {
   font-family: "Be Vietnam Pro", serif;
   font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 /* Responsividad */
+@media (max-width: 1024px) {
+  .catalogo-item {
+    flex-direction: column; /* Apila la imagen y el texto */
+    text-align: center;
+  }
+
+  .catalogo-img-container,
+  .catalogo-text-container {
+    width: 100%; /* Las imágenes y el texto ocuparán toda la pantalla */
+  }
+}
+
+/* 📌 Ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
   .catalogo-titulo {
-      font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
-      padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .titulo-container {
-      height: auto; /* Ajuste de altura en pantallas pequeñas */
+    height: auto;
+    padding: 1rem;
   }
-
-  .catalogo-grid {
-    .catalogo-grid {
-      grid-template-columns: 1fr; /* Asegura que haya solo una columna incluso en pantallas más grandes */
-  
-  }
-}
 
   .title-item {
-      font-size: 1.5rem; /* Título más pequeño */
-      padding: 1rem;
+    font-size: 1.5rem;
   }
 
   .paragraph-item {
-      font-size: 1rem; /* Ajuste de tamaño de texto */
+    font-size: 1rem;
   }
 
   .catalogo-img-container {
-      height: 250px; /* Ajusta la altura de las imágenes en pantallas pequeñas */
+    height: 300px; /* Reduce la altura en pantallas más pequeñas */
   }
 }
 
+/* 📌 Ajustes en móviles */
 @media (max-width: 480px) {
   .catalogo-titulo {
-      font-size: 1.3rem;
-      padding: 0.5rem;
+    font-size: 1.3rem;
   }
 
   .title-item {
-      font-size: 1.3rem; /* Título aún más pequeño */
-      padding: 0.5rem;
+    font-size: 1.3rem;
   }
 
   .paragraph-item {
-      font-size: 0.9rem; /* Texto más pequeño en pantallas muy pequeñas */
+    font-size: 0.9rem;
   }
 
   .catalogo-img-container {
-      height: 200px; /* Imágenes aún más pequeñas */
-  }
-
-  .catalogo-grid {
-      grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+    height: 200px; /* Imágenes más pequeñas en móviles */
   }
 }

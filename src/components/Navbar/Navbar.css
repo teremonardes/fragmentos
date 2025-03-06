@@ -10,3 +10,7 @@
 .navbar a:hover {
   color: #923B3B !important; /* Color al pasar el mouse */
 }
+
+.dropdown-item {
+  font-size: 1.2rem !important
+}

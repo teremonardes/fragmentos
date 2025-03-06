@@ -19,11 +19,13 @@ const NavbarF = () => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
             <Link to='/' className='nav-link'>INICIO</Link>
-            <NavDropdown title='CATÁLOGO' id='basic-nav-dropdown'>
+            <NavDropdown title='CATÁLOGO' id='basic-nav-dropdown' className='dropdown-item'>
               <NavDropdown.Item onClick={() => handleSelectMaterial('vidrios')}>VIDRIOS</NavDropdown.Item>
               <NavDropdown.Item onClick={() => handleSelectMaterial('metales')}>METALES</NavDropdown.Item>
               <NavDropdown.Item onClick={() => handleSelectMaterial('lozas')}>LOZAS</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => handleSelectMaterial('otros')}>OTROS</NavDropdown.Item>
             </NavDropdown>
+            <Link to='/descargables' className='nav-link'>DESCARGABLES</Link>
           </Nav>
           <Nav className='ms-auto'>
             <Link to='/contacto' className='nav-link'>CONTACTO</Link>

@@ -1,0 +1,214 @@
+/* 🔹 Contenedor principal de la ficha */
+.ficha-container {
+    text-align: center;
+
+  }
+  
+  /* 🔹 Título de la ficha */
+  .ficha-titulo {
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 2.5rem;
+  }
+  
+  /* 🔹 Contenedor del título */
+  .titulo-container {
+    background-color: #923B3B;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🔹 Contenedor de la ficha */
+  .ficha-item {
+    display: flex;
+    flex-direction: row; /* Imagen y texto lado a lado */
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    text-align: left;
+  }
+  
+  /* 🔹 Contenedor de la imagen */
+  .ficha-img-container {
+    width: 50%; /* La imagen ocupa la mitad del ancho */
+    height: 400px; /* Tamaño uniforme */
+    background-color: #fff; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* 🔹 Imagen de la ficha */
+  .ficha-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+  }
+  
+  /* 🔹 Contenedor del texto */
+  .ficha-text-container {
+    width: 50%; /* El texto ocupa la otra mitad */
+    padding: 2rem;
+  }
+  
+  /* 🔹 Título del ítem */
+  .title-item {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #923B3B;
+    margin-bottom: 2rem;
+  }
+  
+  /* 🔹 Descripción */
+  .paragraph-item {
+    font-family: "Be Vietnam Pro", serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  /* 🔹 Estilo para los enlaces dentro de la descripción */
+.paragraph-item a {
+  color: #547FC4; /* Color azul */
+  font-weight: 600; /* Negrita */
+  text-decoration: none; /* Quitar subrayado */
+  transition: color 0.3s ease;
+}
+
+.paragraph-item a:hover {
+  color: #923B3B; /* Cambia de color al pasar el mouse */
+  text-decoration: underline; /* Subrayado al hacer hover */
+}
+
+  
+  /* 🔹 Sección "VER MÁS" */
+  .fichaSection {
+    padding-top: 4rem;
+    text-align: center;
+  }
+  
+  .titleSection {
+    font-size: 2.5rem;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #923B3B;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  /* 🔹 Contenedor de las tarjetas */
+  .cardSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  /* 🔹 Tarjetas de "VER MÁS" */
+  .card {
+    cursor: pointer;
+    width: 300px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-container {
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .card-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .card-title {
+    font-family: "Be Vietnam Pro", serif;;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* 🔹 RESPONSIVIDAD */
+  
+  /* 📌 Ajustes en tablets */
+  @media (max-width: 1024px) {
+    .ficha-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ficha-img-container,
+    .ficha-text-container {
+      width: 100%;
+    }
+  }
+  
+  /* 📌 Ajustes en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .ficha-titulo {
+      font-size: 1.5rem;
+    }
+  
+    .titulo-container {
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .title-item {
+      font-size: 1.5rem;
+    }
+  
+    .paragraph-item {
+      font-size: 1rem;
+    }
+  
+    .ficha-img-container {
+      height: 300px;
+    }
+  }
+  
+  /* 📌 Ajustes en móviles */
+  @media (max-width: 480px) {
+    .ficha-titulo {
+      font-size: 1.3rem;
+    }
+  
+    .title-item {
+      font-size: 1.3rem;
+    }
+  
+    .paragraph-item {
+      font-size: 0.9rem;
+    }
+  
+    .ficha-img-container {
+      height: 200px;
+    }
+  }
+  

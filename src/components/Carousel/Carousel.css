@@ -1,6 +1,6 @@
 /* Fondo del slide */
 .custom-slide {
-  background-color: #DDC75B; 
+  background-color: #923B3B; 
   height: 400px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
 .custom-slide:hover {
   transform: scale(1.02); /* Efecto de escala al pasar el mouse (opcional) */
   transition: transform 0.3s ease;
-  background-color: #d9be37; /* Cambio de color de fondo en hover */
+  background-color: #803434; /* Cambio de color de fondo en hover */
 }
 
 /* Contenedor principal del contenido del slide */
@@ -29,7 +29,7 @@
 /* Contenedor del texto */
 .text-container {
   flex: 1;
-  color: #333; /* Color del texto */
+  color: #f4f4f4; /* Color del texto */
   padding-left: 2rem;
   text-align: right;
 }

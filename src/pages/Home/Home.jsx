@@ -10,7 +10,8 @@ import vidrio from '../../assets/images/vidrio.jpg'
 const materials = [
   { id: 'vidrios', title: 'Vidrios', image: vidrio },
   { id: 'metales', title: 'Metales', image: metal },
-  { id: 'lozas', title: 'Lozas', image: loza }
+  { id: 'lozas', title: 'Lozas', image: loza },
+  { id: 'otros', title: 'Otros' }
 ]
 
 const Home = () => {
