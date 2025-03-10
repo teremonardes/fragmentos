@@ -36,7 +36,7 @@ const Catalogo = () => {
             </div>
             <div className='catalogo-text-container'>
               <h3 className='title-item'>{firstItem.name.toUpperCase()}</h3>
-              <p className='paragraph-item'>{firstItem.desc}</p>
+              <p className='paragraph-item' dangerouslySetInnerHTML={{ __html: firstItem.desc }} />
             </div>
           </div>
         )}
