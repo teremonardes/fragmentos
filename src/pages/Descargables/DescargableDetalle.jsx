@@ -4,7 +4,6 @@ import './DescargableDetalle.css'
 
 const DescargableDetalle = () => {
   const { id } = useParams()
-
   // Busca el descargable por id
   const descargable = descargables.find((item) => item.id === id)
 
@@ -14,7 +13,10 @@ const DescargableDetalle = () => {
 
   return (
     <div className='detalle-container'>
-      <h1 className='detalle-titulo'>{descargable.nombre}</h1>
+      <div className='titulo-container'>
+        <h1 className='detalle-titulo'>{descargable.nombre.toUpperCase()}</h1>
+      </div>
+      <img src={descargable.src} alt={descargable.nombre} />
       <p className='detalle-descripcion'>{descargable.descripcion}</p>
       <p className='detalle-precio'>{descargable.precio}</p>
       <a href={descargable.src} download className='btn btn-primary'>

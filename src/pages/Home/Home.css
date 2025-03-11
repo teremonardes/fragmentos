@@ -111,21 +111,6 @@
   margin-top: 1rem;
 }
 
-.vidriosCard {
-  background-color: #5a8ee0 !important;
-}
-
-.metalesCard {
-  background-color: #737373 !important;
-}
-
-.lozasCard {
-  background-color: #cfcfcf !important;
-}
-
-.otrosCard {
-  background-color: #a5964d !important;
-}
 
 /* Responsividad */
 @media (max-width: 768px) {

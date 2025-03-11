@@ -89,20 +89,14 @@
 
   
   /* 🔹 Sección "VER MÁS" */
-  .fichaSection {
-    padding-top: 4rem;
-    text-align: center;
-  }
+
   
   .titleSection {
     font-size: 2.5rem;
     font-family: "Lora", serif;
     font-weight: 600;
     color: #923B3B;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    text-align: left;
+    margin: auto;
   }
   
   /* 🔹 Contenedor de las tarjetas */
