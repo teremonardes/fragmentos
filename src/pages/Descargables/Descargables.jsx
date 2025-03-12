@@ -21,7 +21,7 @@ const Descargables = () => {
             <div className='card-img-container'>
               <img src={item.src} alt={item.nombre} />
             </div>
-            <Card.Body>
+            <Card.Body className='card-body'>
               <Card.Title className='card-title'>{item.nombre}</Card.Title>
               <Card.Text>{item.descripcion}</Card.Text>
               <Card.Text className='precio'>{item.precio}</Card.Text>

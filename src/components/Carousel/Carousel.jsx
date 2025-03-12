@@ -19,11 +19,11 @@ const CarouselF = () => {
           className='custom-slide'
           onClick={() => handleSlideClick(item.material)} // Redirige al material correspondiente
         >
-          <div className='slide-content d-flex'>
+          <div className='slide-content d-flex align-items-center justify-content-between p-4 w-75 mx-auto'>
             <div className='image-container'>
               <img src={item.src} alt={item.alt} className='slide-image' />
             </div>
-            <div className='text-container'>
+            <div className='text-container d-flex flex-column pl-3 text-end'>
               <h3 className='lable'>{item.label}</h3>
               <p className='description'>{item.description}</p>
             </div>

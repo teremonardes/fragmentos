@@ -16,11 +16,13 @@ const DescargableDetalle = () => {
       <div className='titulo-container'>
         <h1 className='detalle-titulo'>{descargable.nombre.toUpperCase()}</h1>
       </div>
-      <img src={descargable.src} alt={descargable.nombre} />
+      <div className='img-container'>
+        <img src={descargable.src} alt={descargable.nombre} />
+      </div>
       <p className='detalle-descripcion'>{descargable.descripcion}</p>
       <p className='detalle-precio'>{descargable.precio}</p>
-      <a href={descargable.src} download className='btn btn-primary'>
-        Descargar
+      <a href={descargable.src} download className='btn btn-dark'>
+        Comprar
       </a>
     </div>
   )

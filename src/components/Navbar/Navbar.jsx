@@ -13,7 +13,7 @@ const NavbarF = () => {
   }
 
   return (
-    <Navbar bg='light' expand='lg' data-bs-theme='light'>
+    <Navbar bg='light' expand='md' data-bs-theme='light'>
       <Container>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>

@@ -1,37 +1,22 @@
 /* Fondo del slide */
 .custom-slide {
   background-color: #923B3B; 
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
   transition: background-color 0.3s ease; /* Suavizar cambio de color */
 }
 
 .custom-slide:hover {
-  transform: scale(1.02); /* Efecto de escala al pasar el mouse (opcional) */
+  transform: scale(1.02); 
   transition: transform 0.3s ease;
   background-color: #803434; /* Cambio de color de fondo en hover */
 }
 
-/* Contenedor principal del contenido del slide */
-.slide-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
-  padding: 2rem;
-  margin: auto;
-}
 
 /* Contenedor del texto */
 .text-container {
-  flex: 1;
+
   color: #f4f4f4; /* Color del texto */
-  padding-left: 2rem;
-  text-align: right;
+
+
 }
 
 .lable {
