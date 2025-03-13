@@ -14,6 +14,10 @@
   line-height: 1.6;
 }
 
+.catalogoSection {
+  margin: 0 !important;
+}
+
 /* Título de la sección */
 .titleSection {
   font-size: 2.5rem;
@@ -28,6 +32,8 @@
   background-color: #923B3B;
 
 }
+
+
 
 
 

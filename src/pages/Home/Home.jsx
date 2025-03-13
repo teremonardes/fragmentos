@@ -38,11 +38,10 @@ const Home = () => {
         <div className='titleSection mb-2 px-3 d-flex justify-content-end'>
           MATERIALIDAD
         </div>
-        <Row className='cardSection d-flex flex-wrap justify-content-center p-2'>
+        <Row className='cardSection d-flex align-items-center py-4 m-0 w-100 gap-4 justify-content-center'>
           {materials.map((material) => (
-            <Col key={material.id} xs={12} md={3} lg={2} className='d-flex justify-content-center'>
+            <Col key={material.id} xs={12} md={3} lg={2} className='d-flex justify-content-center px-0 mx-3'>
               <Card
-                className='card my-2'
                 onClick={() => handleSelectMaterial(material.id)}
               >
                 <div className='card-img-container w-100'>

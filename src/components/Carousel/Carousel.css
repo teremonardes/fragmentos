@@ -1,7 +1,8 @@
-/* Fondo del slide */
+
+
 .custom-slide {
   background-color: #923B3B; 
-  transition: background-color 0.3s ease; /* Suavizar cambio de color */
+  transition: background-color 0.3s ease; 
 }
 
 .custom-slide:hover {
@@ -15,7 +16,6 @@
 .text-container {
 
   color: #f4f4f4; /* Color del texto */
-
 
 }
 
@@ -31,73 +31,9 @@
   font-size: 1rem;
 }
 
-/* Contenedor de la imagen */
 .image-container {
   width: 350px; /* Ancho máximo del contenedor */
   height: 350px; /* Altura máxima del contenedor */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden; /* Oculta el exceso si la imagen es más grande */
 }
 
-.slide-image {
-  width: 100%; /* Hace que la imagen se adapte completamente al contenedor */
-  height: auto; /* Ajusta la altura proporcionalmente */
-  object-fit: contain; /* Mantiene las proporciones de la imagen */
-}
-
-/* Responsividad */
-@media (max-width: 1200px) {
-  .lable {
-    font-size: 2rem; /* Reduce el tamaño en pantallas medianas */
-  }
-
-  .description {
-    font-size: 0.9rem; /* Reduce ligeramente el tamaño */
-  }
-}
-
-@media (max-width: 768px) {
-  .slide-content {
-    flex-direction: column; /* Cambia la disposición a columna en pantallas más pequeñas */
-    align-items: center; /* Centra el contenido */
-  }
-
-  .lable {
-    font-size: 1.5rem; /* Texto principal más pequeño en pantallas pequeñas */
-    text-align: center; /* Centra el texto */
-  }
-
-  .description {
-    font-size: 0.8rem; /* Texto secundario más pequeño */
-    text-align: center; /* Centra el texto */
-  }
-
-  .image-container {
-    width: 250px; /* Ajusta el tamaño de la imagen */
-    height: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .lable {
-    font-size: 1.2rem; /* Ajuste para pantallas muy pequeñas */
-    text-align: center; /* Centra el texto en pantallas pequeñas */
-  }
-
-  .description {
-    font-size: 0.7rem; /* Ajuste para pantallas muy pequeñas */
-    text-align: center; /* Centra el texto */
-  }
-
-  .text-container {
-    padding-right: 0; /* Elimina padding para texto centrado */
-    padding-left: 0;
-  }
-
-  .image-container {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
-    height: auto; /* Ajusta la altura proporcionalmente */
-  }
-}

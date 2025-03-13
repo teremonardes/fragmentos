@@ -1,4 +1,3 @@
-import './Footer.css'
 const Footer = () => {
   return (
     <div className='mt-4'>
