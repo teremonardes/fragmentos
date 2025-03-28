@@ -32,17 +32,16 @@
     line-height: 1.5;
   }
 
-.paragraph-item a {
-  color: #547FC4; /* Color azul */
-  font-weight: 600; /* Negrita */
-  text-decoration: none; /* Quitar subrayado */
-  transition: color 0.3s ease;
-}
-
-.paragraph-item a:hover {
-  color: #923B3B; /* Cambia de color al pasar el mouse */
-  text-decoration: underline; /* Subrayado al hacer hover */
-}
+  .custom-link {
+    color: #923B3B;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .custom-link:hover {
+    color: #700000;
+  }
 
   
   .card {

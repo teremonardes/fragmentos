@@ -11,6 +11,7 @@ import DescargableDetalle from './pages/Descargables/DescargableDetalle'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import { Analytics } from '@vercel/analytics/react'
 function App () {
   return (
     <BrowserRouter>
@@ -26,7 +27,9 @@ function App () {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
+      <Analytics />
     </BrowserRouter>
+
   )
 }
 

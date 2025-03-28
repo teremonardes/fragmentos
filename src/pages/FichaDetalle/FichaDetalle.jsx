@@ -30,23 +30,36 @@ const FichaDetalle = () => {
     navigate(`/catalogo/${material}/${id}`)
   }
 
+  const parseLinks = (desc) => {
+    return desc.replace(/<a href="([^"]+)">([^<]+)<\/a>/g, (match, url, text) => {
+      return `<span class="custom-link" data-url="${url}">${text}</span>`
+    })
+  }
+
+  const handleClick = (e) => {
+    if (e.target.classList.contains('custom-link')) {
+      const url = e.target.getAttribute('data-url')
+      navigate(url)
+    }
+  }
+
   return (
     <>
       {
       ficha
         ? (
 
-          <div className='ficha-container'>
+          <div className='ficha-container' onClick={handleClick}>
             <div className='titulo-container w-100 text-center'>
               <h1 className='ficha-titulo p-3'>{ficha.name.toUpperCase()}</h1>
             </div>
             <div className='ficha-item d-flex justify-content-center  align-items-center  p-5 flex-column flex-md-row'>
               <div className='ficha-img-container  w-50 d-flex align-items-center d-inline-block'>
-                <img src={ficha.src} alt={ficha.name} className='ficha-img mx-auto d-block object-fit-contain mw-100 mh-100' />
+                <img src={ficha.src} alt={ficha.name} className='ficha-img mx-auto d-block object-fit-contain mw-100 mh-100 p-4' />
               </div>
               <div className='ficha-text-container w-50 '>
                 <h3 className='title-item bt-2 fs-2 text-center mt-4'>{ficha.name.toUpperCase()}</h3>
-                <p className='paragraph-item fs-5 text-start ' dangerouslySetInnerHTML={{ __html: ficha.desc }} />
+                <p className='paragraph-item fs-5 text-start ' dangerouslySetInnerHTML={{ __html: parseLinks(ficha.desc) }} />
               </div>
             </div>
 

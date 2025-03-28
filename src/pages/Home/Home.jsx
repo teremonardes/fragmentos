@@ -49,7 +49,7 @@ const Home = () => {
                   <img src={material.image} alt={material.title} className='mw-100 mh-100 object-fit-contain' />
                 </div>
                 <Card.Body>
-                  <Card.Title className='card-title'>{material.title}</Card.Title>
+                  <Card.Title className='card-title text-center'>{material.title}</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
