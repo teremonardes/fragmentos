@@ -12,15 +12,15 @@ const DescargableDetalle = () => {
   }
 
   return (
-    <div className='detalle-container'>
-      <div className='titulo-container'>
-        <h1 className='detalle-titulo'>{descargable.nombre.toUpperCase()}</h1>
+    <div className='detalle-container text-center pb-5'>
+      <div className='titulo-container w-100'>
+        <h1 className='detalle-titulo p-3'>{descargable.nombre.toUpperCase()}</h1>
       </div>
-      <div className='img-container'>
-        <img src={descargable.src} alt={descargable.nombre} />
+      <div className='img-container d-flex justify-content-center align-items-center m-auto mt-3' style={{ width: '50%', height: '400px' }}>
+        <img src={descargable.src} alt={descargable.nombre} className='mw-100 mh-100 object-fit-contain' />
       </div>
-      <p className='detalle-descripcion'>{descargable.descripcion}</p>
-      <p className='detalle-precio'>{descargable.precio}</p>
+      <p className='detalle-descripcion m-5'>{descargable.descripcion}</p>
+      <p className='detalle-precio mx-2'>{descargable.precio}</p>
       <a href={descargable.src} download className='btn btn-dark'>
         Comprar
       </a>

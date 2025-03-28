@@ -11,16 +11,16 @@ const Contacto = () => {
   }
 
   return (
-    <div className='contacto'>
-      <h1 className='titulo-contacto'>¿Tienes alguna pregunta o comentario?</h1>
+    <div className='contacto d-flex flex-column align-items-center p-2 text-center'>
+      <h1 className='titulo-contacto p-4'>¿Tienes alguna pregunta o comentario?</h1>
       <div className='texto-contacto'>
         <p>Escríbenos a +569 1234567, mailfragmentos@ejemplo.cl</p>
         <p>O puedes dejarnos tu mensaje en este formulario</p>
         <form className='formulario' onSubmit={handleSubmit}>
-          <input type='text' name='nombre' placeholder='Ingresa tu nombre' required className='input' />
-          <input type='email' name='email' placeholder='Ingresa tu mail' required className='input' />
-          <textarea name='mensaje' placeholder='Ingresa tu mensaje' required className='input mensaje' />
-          <button className='btn btn-dark mt-3 mb-5' type='submit'>Enviar</button>
+          <input type='text' name='nombre' placeholder='Ingresa tu nombre' required className='input w-100 p-2 mb-4' />
+          <input type='email' name='email' placeholder='Ingresa tu mail' required className='input w-100 p-2 mb-4' />
+          <textarea name='mensaje' placeholder='Ingresa tu mensaje' required className='input mensaje w-100 p-2 mb-4' />
+          <button className='btn btn-dark mt-3 mb-5 mw-100' type='submit'>Enviar</button>
         </form>
       </div>
     </div>

@@ -42,13 +42,14 @@ const Home = () => {
           {materials.map((material) => (
             <Col key={material.id} xs={12} md={3} lg={2} className='d-flex justify-content-center px-0 mx-3'>
               <Card
+                className='card w-100 h-100'
                 onClick={() => handleSelectMaterial(material.id)}
               >
-                <div className='card-img-container w-100'>
-                  <img src={material.image} alt={material.title} className='w-100 p-1' />
+                <div className='card-img-container w-100 d-flex justify-content-center'>
+                  <img src={material.image} alt={material.title} className='mw-100 mh-100 object-fit-contain' />
                 </div>
                 <Card.Body>
-                  <Card.Title className='card-title mt-1'>{material.title}</Card.Title>
+                  <Card.Title className='card-title'>{material.title}</Card.Title>
                 </Card.Body>
               </Card>
             </Col>

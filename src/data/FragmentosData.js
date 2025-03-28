@@ -75,3 +75,19 @@ export const lozasData = [
     // anls: 'Análisis del metal 2.'
   }
 ]
+
+export const otrosData = [
+  {
+    id: 'otros',
+    name: 'Otro',
+    src: false,
+    desc: 'Descripción del otros.'
+
+  },
+  {
+    id: 'otros1',
+    name: 'Otros 1',
+    src: false
+
+  }
+]
